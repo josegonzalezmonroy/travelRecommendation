@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel App</title>
+    <link rel="stylesheet" href="travel_recommendation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/images/logo.png" height="80px" alt="Travel App Logo" />
+        <h1>Travel App</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter a keyword" />
+        <button type="submit">Search</button>
+        <button class="clear-search">Clear</button>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Discover Your Next Adventure</h2>
+        <p>
+          Travel App is your go-to guide for curated travel tips, destination
+          recommendations, and smart planning tools. Whether you're dreaming of
+          a weekend escape or a global journey, we help you travel better.
+        </p>
+      </section>
+      <section id="about">
+        <h2>About us</h2>
+        <p>
+          Travel App is a platform created by passionate travelers and explorers
+          who believe that travel is one of the most powerful ways to connect
+          with the world. Our mission is to make every journey easier, smarter,
+          and more meaningful by providing curated recommendations, in-depth
+          destination guides, and practical tools for trip planning.
+        </p>
+
+        <div class="team">
+          <h3>Our Team</h3>
+          <div class="team-card">
+            <img src="/icons/avatar.svg" alt="Team Member 1" />
+            <div class="team-info">
+              <h4>Alex Rivera</h4>
+              <span>Adventure enthusiast and culture seeker.</span>
+              <p>Co-Founder</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="/icons/avatar.svg" alt="Team Member 2" />
+            <div class="team-info">
+              <h4>Sara Kim</h4>
+              <span>UX designer with a love for maps and food.</span>
+              <p>Product Designer</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="/icons/avatar.svg" alt="Team Member 3" />
+            <div class="team-info">
+              <h4>Leo Martins</h4>
+              <span>Full-stack dev and road trip addict.</span>
+              <p>Tech Lead</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form method="post" class="contact-form">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br /><br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <aside class="social-bar">
+      <a href="https://x.com" target="_blank"
+        ><img src="/icons/x.svg" alt="X"
+      /></a>
+      <a href="https://facebook.com" target="_blank"
+        ><img src="/icons/facebook.svg" alt="Facebook"
+      /></a>
+      <a href="https://instagram.com" target="_blank"
+        ><img src="/icons/instagram.svg" alt="Instagram"
+      /></a>
+      <a href="https://youtube.com" target="_blank"
+        ><img src="/icons/youtube.svg" alt="YouTube"
+      /></a>
+    </aside>
+    <aside id="side-results" class="side-results"></aside>
+
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
